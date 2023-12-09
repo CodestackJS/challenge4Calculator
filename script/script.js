@@ -19,15 +19,147 @@ let userInput = document.getElementById("userInput");
 
 let num1 = "";
 let num2 = "";
+let numSwitch = false;
 
+
+//btn 0
 btn0.addEventListener("click", function(event){
-        num1 = num1 + "0";
+        if (numSwitch == false){
+            num1 = num1 + "0";
+        }
+        else
+        {
+            num2 = num2 +"0";
+        }
         display(num1, num2);
-});
+    });
+
+
+    btnAdd.addEventListener("click", function(event){
+        numSwitch = true;
+    });
+
 
 function display (number1, number2){
-    displayField.innerText = num1;
+    if (numSwitch == false){
+        displayField.innerText = number1;
+    }
+    else
+    {
+        displayField.innerText = number2;
+    }
+}                                                                                                                                                                                                    
+
+//btn1
+btn1.addEventListener("click", function(event){
+    if (numSwitch == false){
+        num1 = num1 + "1";
+    }
+    else
+    {
+        num2 = num2 +"1";
+    }
+    display(num1, num2);
+});
+
+
+btnAdd.addEventListener("click", function(event){
+    numSwitch = true;
+});
+
+
+function display (number1, number2){
+if (numSwitch == false){
+    displayField.innerText = number1;
 }
+else
+{
+    displayField.innerText = number2;
+}
+}       
 
 
+//btn 2
+btn2.addEventListener("click", function(event){
+    if (numSwitch == false){
+        num1 = num1 + "2";
+    }
+    else
+    {
+        num2 = num2 +"2";
+    }
+    display(num1, num2);
+});
+
+
+btnAdd.addEventListener("click", function(event){
+    numSwitch = true;
+});
+
+
+function display (number1, number2){
+if (numSwitch == false){
+    displayField.innerText = number1;
+}
+else
+{
+    displayField.innerText = number2;
+}
+}    
+
+//btn 3
+btn3.addEventListener("click", function(event){
+    if (numSwitch == false){
+        num1 = num1 + "3";
+    }
+    else
+    {
+        num2 = num2 +"3";
+    }
+    display(num1, num2);
+});
+
+
+btnAdd.addEventListener("click", function(event){
+    numSwitch = true;
+});
+
+
+function display (number1, number2){
+if (numSwitch == false){
+    displayField.innerText = number1;
+}
+else
+{
+    displayField.innerText = number2;
+}
+}    
+
+//btn 4
+btn4.addEventListener("click", function(event){
+    if (numSwitch == false){
+        num1 = num1 + "4";
+    }
+    else
+    {
+        num2 = num2 +"4";
+    }
+    display(num1, num2);
+});
+
+
+btnAdd.addEventListener("click", function(event){
+    numSwitch = true;
+});
+
+
+function display (number1, number2){
+if (numSwitch == false){
+    displayField.innerText = number1;
+}
+else
+{
+    displayField.innerText = number2;
+}
+}    
 
